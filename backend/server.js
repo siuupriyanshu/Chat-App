@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5001;
 
 app.use(express.json());
 
-app.get("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Authentication API');
